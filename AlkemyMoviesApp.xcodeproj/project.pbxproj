@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680706A4271F2118006BA471 /* DetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680706A2271F2118006BA471 /* DetallesViewController.swift */; };
+		680706A5271F2118006BA471 /* DetallesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680706A3271F2118006BA471 /* DetallesViewController.xib */; };
+		680706AF27204FFD006BA471 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680706AE27204FFD006BA471 /* TabBarViewController.swift */; };
+		680706B527206F3D006BA471 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680706B327206F3D006BA471 /* LoginViewController.swift */; };
+		680706B627206F3D006BA471 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680706B427206F3D006BA471 /* LoginViewController.xib */; };
+		683C0A142719D1A1008FDFE1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C0A132719D1A1008FDFE1 /* CustomCell.swift */; };
+		683C0A18271C7E12008FDFE1 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C0A17271C7E12008FDFE1 /* CustomImageView.swift */; };
+		6857411A271616BF0094333C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFAA9A271615EC00D1D756 /* Alamofire.framework */; };
+		6857411B271616BF0094333C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFAA9A271615EC00D1D756 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6857412A271618EC0094333C /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68574129271618EC0094333C /* InitialViewModel.swift */; };
+		687FA8A42722092B00855AD2 /* FavoritasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687FA8A32722092B00855AD2 /* FavoritasViewModel.swift */; };
+		68D06D362720CB78003E9B82 /* FavoritasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D06D342720CB78003E9B82 /* FavoritasViewController.swift */; };
+		68D06D372720CB78003E9B82 /* FavoritasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68D06D352720CB78003E9B82 /* FavoritasViewController.xib */; };
+		68D06D3B2720CEA9003E9B82 /* DetallesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D06D3A2720CEA9003E9B82 /* DetallesViewModel.swift */; };
+		68D741FB2715EB5A003932F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D741FA2715EB5A003932F4 /* AppDelegate.swift */; };
+		68D741FD2715EB5A003932F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D741FC2715EB5A003932F4 /* SceneDelegate.swift */; };
+		68D741FF2715EB5A003932F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D741FE2715EB5A003932F4 /* ViewController.swift */; };
+		68D742052715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68D742032715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodeld */; };
+		68D742072715EB5C003932F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D742062715EB5C003932F4 /* Assets.xcassets */; };
+		68D7420A2715EB5C003932F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D742082715EB5C003932F4 /* LaunchScreen.storyboard */; };
+		68D742152715EB5C003932F4 /* AlkemyMoviesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D742142715EB5C003932F4 /* AlkemyMoviesAppTests.swift */; };
+		68D742202715EB5C003932F4 /* AlkemyMoviesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7421F2715EB5C003932F4 /* AlkemyMoviesAppUITests.swift */; };
+		68D742352715ED13003932F4 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D742332715ED13003932F4 /* InitialViewController.swift */; };
+		68D742362715ED13003932F4 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68D742342715ED13003932F4 /* InitialViewController.xib */; };
+		68D7423E271602A8003932F4 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7423D271602A8003932F4 /* MoviesService.swift */; };
+		68D74244271602E7003932F4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D74243271602E7003932F4 /* ApiClient.swift */; };
+		68D7424927160333003932F4 /* DataMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7424827160333003932F4 /* DataMovies.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68BFAA99271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		68BFAA9B271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		68BFAA9D271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		68BFAA9F271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		68BFAAA1271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		68BFAAA3271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		68BFAAA5271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		68BFAAA7271615EC00D1D756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31293065263E17D600473CEA;
+			remoteInfo = "Alamofire watchOS Tests";
+		};
+		68D742112715EB5C003932F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D741EF2715EB5A003932F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D741F62715EB5A003932F4;
+			remoteInfo = AlkemyMoviesApp;
+		};
+		68D7421C2715EB5C003932F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D741EF2715EB5A003932F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D741F62715EB5A003932F4;
+			remoteInfo = AlkemyMoviesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6857411C271616BF0094333C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6857411B271616BF0094333C /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		680706A2271F2118006BA471 /* DetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesViewController.swift; sourceTree = "<group>"; };
+		680706A3271F2118006BA471 /* DetallesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetallesViewController.xib; sourceTree = "<group>"; };
+		680706AE27204FFD006BA471 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		680706B327206F3D006BA471 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		680706B427206F3D006BA471 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		683C0A132719D1A1008FDFE1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		683C0A17271C7E12008FDFE1 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		68574129271618EC0094333C /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
+		687FA8A32722092B00855AD2 /* FavoritasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritasViewModel.swift; sourceTree = "<group>"; };
+		68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		68D06D342720CB78003E9B82 /* FavoritasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritasViewController.swift; sourceTree = "<group>"; };
+		68D06D352720CB78003E9B82 /* FavoritasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritasViewController.xib; sourceTree = "<group>"; };
+		68D06D3A2720CEA9003E9B82 /* DetallesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesViewModel.swift; sourceTree = "<group>"; };
+		68D741F72715EB5A003932F4 /* AlkemyMoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlkemyMoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D741FA2715EB5A003932F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68D741FC2715EB5A003932F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68D741FE2715EB5A003932F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68D742042715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlkemyMoviesApp.xcdatamodel; sourceTree = "<group>"; };
+		68D742062715EB5C003932F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68D742092715EB5C003932F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68D7420B2715EB5C003932F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D742102715EB5C003932F4 /* AlkemyMoviesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlkemyMoviesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D742142715EB5C003932F4 /* AlkemyMoviesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlkemyMoviesAppTests.swift; sourceTree = "<group>"; };
+		68D742162715EB5C003932F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D7421B2715EB5C003932F4 /* AlkemyMoviesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlkemyMoviesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D7421F2715EB5C003932F4 /* AlkemyMoviesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlkemyMoviesAppUITests.swift; sourceTree = "<group>"; };
+		68D742212715EB5C003932F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D742332715ED13003932F4 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		68D742342715ED13003932F4 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		68D7423D271602A8003932F4 /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		68D74243271602E7003932F4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		68D7424827160333003932F4 /* DataMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMovies.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68D741F42715EB5A003932F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6857411A271616BF0094333C /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7420D2715EB5C003932F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D742182715EB5C003932F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		680706A1271F20FB006BA471 /* Detalles */ = {
+			isa = PBXGroup;
+			children = (
+				680706A2271F2118006BA471 /* DetallesViewController.swift */,
+				68D06D3A2720CEA9003E9B82 /* DetallesViewModel.swift */,
+				680706A3271F2118006BA471 /* DetallesViewController.xib */,
+			);
+			path = Detalles;
+			sourceTree = "<group>";
+		};
+		680706AA271F23DF006BA471 /* ListaPeliculas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ListaPeliculas;
+			sourceTree = "<group>";
+		};
+		680706B227206F20006BA471 /* LoginAppMovies */ = {
+			isa = PBXGroup;
+			children = (
+				680706B327206F3D006BA471 /* LoginViewController.swift */,
+				680706B427206F3D006BA471 /* LoginViewController.xib */,
+			);
+			path = LoginAppMovies;
+			sourceTree = "<group>";
+		};
+		683C0A2E271F1CCD008FDFE1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				680706AE27204FFD006BA471 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		68574111271616BF0094333C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68BFAA8F271615EC00D1D756 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68BFAA9A271615EC00D1D756 /* Alamofire.framework */,
+				68BFAA9C271615EC00D1D756 /* Alamofire iOS Tests.xctest */,
+				68BFAA9E271615EC00D1D756 /* Alamofire.framework */,
+				68BFAAA0271615EC00D1D756 /* Alamofire macOS Tests.xctest */,
+				68BFAAA2271615EC00D1D756 /* Alamofire.framework */,
+				68BFAAA4271615EC00D1D756 /* Alamofire tvOS Tests.xctest */,
+				68BFAAA6271615EC00D1D756 /* Alamofire.framework */,
+				68BFAAA8271615EC00D1D756 /* Alamofire watchOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68D06D332720CB50003E9B82 /* PeliculasFavoritas */ = {
+			isa = PBXGroup;
+			children = (
+				68D06D342720CB78003E9B82 /* FavoritasViewController.swift */,
+				68D06D352720CB78003E9B82 /* FavoritasViewController.xib */,
+				687FA8A32722092B00855AD2 /* FavoritasViewModel.swift */,
+			);
+			path = PeliculasFavoritas;
+			sourceTree = "<group>";
+		};
+		68D741EE2715EB5A003932F4 = {
+			isa = PBXGroup;
+			children = (
+				68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */,
+				68D741F92715EB5A003932F4 /* AlkemyMoviesApp */,
+				68D742132715EB5C003932F4 /* AlkemyMoviesAppTests */,
+				68D7421E2715EB5C003932F4 /* AlkemyMoviesAppUITests */,
+				68D741F82715EB5A003932F4 /* Products */,
+				68574111271616BF0094333C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68D741F82715EB5A003932F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68D741F72715EB5A003932F4 /* AlkemyMoviesApp.app */,
+				68D742102715EB5C003932F4 /* AlkemyMoviesAppTests.xctest */,
+				68D7421B2715EB5C003932F4 /* AlkemyMoviesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68D741F92715EB5A003932F4 /* AlkemyMoviesApp */ = {
+			isa = PBXGroup;
+			children = (
+				68D06D332720CB50003E9B82 /* PeliculasFavoritas */,
+				680706B227206F20006BA471 /* LoginAppMovies */,
+				680706AA271F23DF006BA471 /* ListaPeliculas */,
+				680706A1271F20FB006BA471 /* Detalles */,
+				683C0A2E271F1CCD008FDFE1 /* TabBar */,
+				68D7423D271602A8003932F4 /* MoviesService.swift */,
+				68D741FA2715EB5A003932F4 /* AppDelegate.swift */,
+				68D741FC2715EB5A003932F4 /* SceneDelegate.swift */,
+				68D741FE2715EB5A003932F4 /* ViewController.swift */,
+				68D742062715EB5C003932F4 /* Assets.xcassets */,
+				68D742082715EB5C003932F4 /* LaunchScreen.storyboard */,
+				68D7420B2715EB5C003932F4 /* Info.plist */,
+				68D742032715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodeld */,
+				68D742332715ED13003932F4 /* InitialViewController.swift */,
+				68D742342715ED13003932F4 /* InitialViewController.xib */,
+				68D74243271602E7003932F4 /* ApiClient.swift */,
+				68D7424827160333003932F4 /* DataMovies.swift */,
+				68574129271618EC0094333C /* InitialViewModel.swift */,
+				683C0A132719D1A1008FDFE1 /* CustomCell.swift */,
+				683C0A17271C7E12008FDFE1 /* CustomImageView.swift */,
+			);
+			path = AlkemyMoviesApp;
+			sourceTree = "<group>";
+		};
+		68D742132715EB5C003932F4 /* AlkemyMoviesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				68D742142715EB5C003932F4 /* AlkemyMoviesAppTests.swift */,
+				68D742162715EB5C003932F4 /* Info.plist */,
+			);
+			path = AlkemyMoviesAppTests;
+			sourceTree = "<group>";
+		};
+		68D7421E2715EB5C003932F4 /* AlkemyMoviesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68D7421F2715EB5C003932F4 /* AlkemyMoviesAppUITests.swift */,
+				68D742212715EB5C003932F4 /* Info.plist */,
+			);
+			path = AlkemyMoviesAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68D741F62715EB5A003932F4 /* AlkemyMoviesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D742242715EB5C003932F4 /* Build configuration list for PBXNativeTarget "AlkemyMoviesApp" */;
+			buildPhases = (
+				68D741F32715EB5A003932F4 /* Sources */,
+				68D741F42715EB5A003932F4 /* Frameworks */,
+				68D741F52715EB5A003932F4 /* Resources */,
+				6857411C271616BF0094333C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlkemyMoviesApp;
+			productName = AlkemyMoviesApp;
+			productReference = 68D741F72715EB5A003932F4 /* AlkemyMoviesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68D7420F2715EB5C003932F4 /* AlkemyMoviesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D742272715EB5C003932F4 /* Build configuration list for PBXNativeTarget "AlkemyMoviesAppTests" */;
+			buildPhases = (
+				68D7420C2715EB5C003932F4 /* Sources */,
+				68D7420D2715EB5C003932F4 /* Frameworks */,
+				68D7420E2715EB5C003932F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D742122715EB5C003932F4 /* PBXTargetDependency */,
+			);
+			name = AlkemyMoviesAppTests;
+			productName = AlkemyMoviesAppTests;
+			productReference = 68D742102715EB5C003932F4 /* AlkemyMoviesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68D7421A2715EB5C003932F4 /* AlkemyMoviesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D7422A2715EB5C003932F4 /* Build configuration list for PBXNativeTarget "AlkemyMoviesAppUITests" */;
+			buildPhases = (
+				68D742172715EB5C003932F4 /* Sources */,
+				68D742182715EB5C003932F4 /* Frameworks */,
+				68D742192715EB5C003932F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D7421D2715EB5C003932F4 /* PBXTargetDependency */,
+			);
+			name = AlkemyMoviesAppUITests;
+			productName = AlkemyMoviesAppUITests;
+			productReference = 68D7421B2715EB5C003932F4 /* AlkemyMoviesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68D741EF2715EB5A003932F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					68D741F62715EB5A003932F4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					68D7420F2715EB5C003932F4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 68D741F62715EB5A003932F4;
+					};
+					68D7421A2715EB5C003932F4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 68D741F62715EB5A003932F4;
+					};
+				};
+			};
+			buildConfigurationList = 68D741F22715EB5A003932F4 /* Build configuration list for PBXProject "AlkemyMoviesApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68D741EE2715EB5A003932F4;
+			productRefGroup = 68D741F82715EB5A003932F4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 68BFAA8F271615EC00D1D756 /* Products */;
+					ProjectRef = 68BFAA8E271615EC00D1D756 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				68D741F62715EB5A003932F4 /* AlkemyMoviesApp */,
+				68D7420F2715EB5C003932F4 /* AlkemyMoviesAppTests */,
+				68D7421A2715EB5C003932F4 /* AlkemyMoviesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		68BFAA9A271615EC00D1D756 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 68BFAA99271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68BFAA9C271615EC00D1D756 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 68BFAA9B271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68BFAA9E271615EC00D1D756 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 68BFAA9D271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68BFAAA0271615EC00D1D756 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 68BFAA9F271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68BFAAA2271615EC00D1D756 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 68BFAAA1271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68BFAAA4271615EC00D1D756 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 68BFAAA3271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68BFAAA6271615EC00D1D756 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 68BFAAA5271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68BFAAA8271615EC00D1D756 /* Alamofire watchOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire watchOS Tests.xctest";
+			remoteRef = 68BFAAA7271615EC00D1D756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68D741F52715EB5A003932F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D06D372720CB78003E9B82 /* FavoritasViewController.xib in Resources */,
+				680706B627206F3D006BA471 /* LoginViewController.xib in Resources */,
+				680706A5271F2118006BA471 /* DetallesViewController.xib in Resources */,
+				68D7420A2715EB5C003932F4 /* LaunchScreen.storyboard in Resources */,
+				68D742072715EB5C003932F4 /* Assets.xcassets in Resources */,
+				68D742362715ED13003932F4 /* InitialViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7420E2715EB5C003932F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D742192715EB5C003932F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68D741F32715EB5A003932F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680706B527206F3D006BA471 /* LoginViewController.swift in Sources */,
+				68D7424927160333003932F4 /* DataMovies.swift in Sources */,
+				68D74244271602E7003932F4 /* ApiClient.swift in Sources */,
+				683C0A142719D1A1008FDFE1 /* CustomCell.swift in Sources */,
+				68D742352715ED13003932F4 /* InitialViewController.swift in Sources */,
+				68D741FF2715EB5A003932F4 /* ViewController.swift in Sources */,
+				68D06D362720CB78003E9B82 /* FavoritasViewController.swift in Sources */,
+				68D7423E271602A8003932F4 /* MoviesService.swift in Sources */,
+				6857412A271618EC0094333C /* InitialViewModel.swift in Sources */,
+				683C0A18271C7E12008FDFE1 /* CustomImageView.swift in Sources */,
+				680706A4271F2118006BA471 /* DetallesViewController.swift in Sources */,
+				68D741FB2715EB5A003932F4 /* AppDelegate.swift in Sources */,
+				68D06D3B2720CEA9003E9B82 /* DetallesViewModel.swift in Sources */,
+				680706AF27204FFD006BA471 /* TabBarViewController.swift in Sources */,
+				68D741FD2715EB5A003932F4 /* SceneDelegate.swift in Sources */,
+				68D742052715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodeld in Sources */,
+				687FA8A42722092B00855AD2 /* FavoritasViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7420C2715EB5C003932F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D742152715EB5C003932F4 /* AlkemyMoviesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D742172715EB5C003932F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D742202715EB5C003932F4 /* AlkemyMoviesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68D742122715EB5C003932F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D741F62715EB5A003932F4 /* AlkemyMoviesApp */;
+			targetProxy = 68D742112715EB5C003932F4 /* PBXContainerItemProxy */;
+		};
+		68D7421D2715EB5C003932F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D741F62715EB5A003932F4 /* AlkemyMoviesApp */;
+			targetProxy = 68D7421C2715EB5C003932F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68D742082715EB5C003932F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68D742092715EB5C003932F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68D742222715EB5C003932F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68D742232715EB5C003932F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68D742252715EB5C003932F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6649Z237VT;
+				INFOPLIST_FILE = AlkemyMoviesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jannof.AlkemyMoviesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68D742262715EB5C003932F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6649Z237VT;
+				INFOPLIST_FILE = AlkemyMoviesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jannof.AlkemyMoviesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68D742282715EB5C003932F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6649Z237VT;
+				INFOPLIST_FILE = AlkemyMoviesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jannof.AlkemyMoviesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlkemyMoviesApp.app/AlkemyMoviesApp";
+			};
+			name = Debug;
+		};
+		68D742292715EB5C003932F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6649Z237VT;
+				INFOPLIST_FILE = AlkemyMoviesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jannof.AlkemyMoviesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlkemyMoviesApp.app/AlkemyMoviesApp";
+			};
+			name = Release;
+		};
+		68D7422B2715EB5C003932F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6649Z237VT;
+				INFOPLIST_FILE = AlkemyMoviesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jannof.AlkemyMoviesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlkemyMoviesApp;
+			};
+			name = Debug;
+		};
+		68D7422C2715EB5C003932F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6649Z237VT;
+				INFOPLIST_FILE = AlkemyMoviesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jannof.AlkemyMoviesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlkemyMoviesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68D741F22715EB5A003932F4 /* Build configuration list for PBXProject "AlkemyMoviesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D742222715EB5C003932F4 /* Debug */,
+				68D742232715EB5C003932F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D742242715EB5C003932F4 /* Build configuration list for PBXNativeTarget "AlkemyMoviesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D742252715EB5C003932F4 /* Debug */,
+				68D742262715EB5C003932F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D742272715EB5C003932F4 /* Build configuration list for PBXNativeTarget "AlkemyMoviesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D742282715EB5C003932F4 /* Debug */,
+				68D742292715EB5C003932F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D7422A2715EB5C003932F4 /* Build configuration list for PBXNativeTarget "AlkemyMoviesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D7422B2715EB5C003932F4 /* Debug */,
+				68D7422C2715EB5C003932F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		68D742032715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68D742042715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodel */,
+			);
+			currentVersion = 68D742042715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodel */;
+			path = AlkemyMoviesApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 68D741EF2715EB5A003932F4 /* Project object */;
+}
