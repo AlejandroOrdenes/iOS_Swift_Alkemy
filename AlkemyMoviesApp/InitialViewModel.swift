@@ -28,7 +28,7 @@ class InitialViewModel {
         movies.count
     }
     
-    func getMovieIndex(at index: Int) -> MoviesJson {
+    func getMovieIndexInitial(at index: Int) -> MoviesJson {
         movies[index]
     }
     

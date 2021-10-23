@@ -8,8 +8,14 @@
 import UIKit
 
 class DetallesViewController: UIViewController {
-    var movieDetalles = [MoviesJson]()
-    var viewModel: DetallesViewModel!
+    var movieDetail = [MoviesJson]()
+    
+    var imgURL: String = ""
+    var titulo: String = ""
+    var fecha: String = ""
+    var idioma: String = ""
+    var descripcion: String = ""
+    var puntaje: String = ""
     
     @IBOutlet weak var imageMovie: UIImageView!
     @IBOutlet weak var titleMovie: UILabel!
@@ -19,26 +25,24 @@ class DetallesViewController: UIViewController {
     @IBOutlet weak var dateMovie: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.viewModel = DetallesViewModel(service: MoviesService(), model: [MoviesJson]())
-//
-//        let stringImage = viewModel.getUrlImage(at: 0)
-////        let imgURL = URL(string: "https://image.tmdb.org/t/p/w500" + stringImage)
-//
-//        if let data = try? Data(contentsOf: imgURL!) {
-//              imageMovie.image = UIImage(data: data)
-//          }
-        viewModel.movieDetallesModel.append(contentsOf: movieDetalles)
+         super.viewDidLoad()
+           
+        let imageUrl = URL(string: "https://image.tmdb.org/t/p/w500" + imgURL)!
+
+        if let data = try? Data(contentsOf: imageUrl) {
+              imageMovie.image = UIImage(data: data)
+          }
         
-        titleMovie.text = viewModel.getTitle(at: 0)
-        print("MOVIE_DETALLES",movieDetalles)
-        descriptionMovie?.text = viewModel.getDescription(at: 0)
-        idiomMovie?.text = "Language: " + viewModel.getLanguage(at: 0)
-        dateMovie?.text = "Release Date: " + viewModel.getDate(at: 0)
-        ratingMovie?.text = "Average: " + String(viewModel.getAverage(at: 0)) + " / 10 "
+        titleMovie.text = titulo
+        dateMovie.text = "Release Date: " + fecha
+        idiomMovie.text = "Language: " + idioma.uppercased()
+        descriptionMovie.text = descripcion
+        ratingMovie.text = "Average: " + puntaje + " / 10"
+        
+     
+     }
     
-    
-    }
+   
     
     @IBAction func voteButton(_ sender: Any) {
         

@@ -36,7 +36,12 @@ extension InitialViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableViewMovies.deselectRow(at: indexPath, animated: true)
-        showMovies(for: viewModel.getMovieIndex(at: indexPath.row))
+        showMovies(for: viewModel.getMovieIndexInitial(at: indexPath.row))
+        
+        print("VIEWWWMODELL",viewModel.getMovieIndexInitial(at: indexPath.row))
+        
+        
+
         
     }
     
@@ -76,9 +81,18 @@ extension InitialViewController: UITableViewDataSource, UITableViewDelegate {
    
     private func showMovies(for movies: MoviesJson) {
 
-        let movieViewController = DetallesViewController(nibName: "DetallesViewController", bundle: nil)
-        movieViewController.movieDetalles.append(movies)
-        navigationController?.pushViewController(movieViewController, animated: true)
+        let detallesVC = DetallesViewController(nibName: "DetallesViewController", bundle: nil)
+    
+        detallesVC.imgURL = movies.backdrop_path
+        detallesVC.titulo = movies.title
+        detallesVC.fecha = movies.release_date
+        detallesVC.idioma = movies.original_language
+        detallesVC.descripcion = movies.overview
+        detallesVC.puntaje = String(movies.vote_average)
+        
+        navigationController?.pushViewController(detallesVC, animated: true)
     }
 }
+
+
 
