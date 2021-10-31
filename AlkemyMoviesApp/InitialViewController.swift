@@ -38,11 +38,6 @@ extension InitialViewController: UITableViewDataSource, UITableViewDelegate {
         tableViewMovies.deselectRow(at: indexPath, animated: true)
         showMovies(for: viewModel.getMovieIndexInitial(at: indexPath.row))
         
-        print("VIEWWWMODELL",viewModel.getMovieIndexInitial(at: indexPath.row))
-        
-        
-
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,8 +52,6 @@ extension InitialViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
-        
         let cell = tableViewMovies.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let movies = viewModel.movies[indexPath.row]
         
@@ -72,7 +65,6 @@ extension InitialViewController: UITableViewDataSource, UITableViewDelegate {
         
         if let url = URL(string: "https://image.tmdb.org/t/p/w500\(movies.poster_path)") {
             customCell.imageIV.loadImageView(from: url)
-            print(url)
         }
         print(movies)
         return cell
@@ -82,13 +74,7 @@ extension InitialViewController: UITableViewDataSource, UITableViewDelegate {
     private func showMovies(for movies: MoviesJson) {
 
         let detallesVC = DetallesViewController(nibName: "DetallesViewController", bundle: nil)
-    
-        detallesVC.imgURL = movies.backdrop_path
-        detallesVC.titulo = movies.title
-        detallesVC.fecha = movies.release_date
-        detallesVC.idioma = movies.original_language
-        detallesVC.descripcion = movies.overview
-        detallesVC.puntaje = String(movies.vote_average)
+        detallesVC.movieDetails = movies
         
         navigationController?.pushViewController(detallesVC, animated: true)
     }

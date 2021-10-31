@@ -15,7 +15,6 @@
 		683C0A142719D1A1008FDFE1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C0A132719D1A1008FDFE1 /* CustomCell.swift */; };
 		683C0A18271C7E12008FDFE1 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C0A17271C7E12008FDFE1 /* CustomImageView.swift */; };
 		6857412A271618EC0094333C /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68574129271618EC0094333C /* InitialViewModel.swift */; };
-		687FA8A42722092B00855AD2 /* FavoritasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687FA8A32722092B00855AD2 /* FavoritasViewModel.swift */; };
 		68B21F332723654B00842EEC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B21F222723648600842EEC /* Alamofire.framework */; };
 		68B21F342723654B00842EEC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B21F222723648600842EEC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68D06D362720CB78003E9B82 /* FavoritasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D06D342720CB78003E9B82 /* FavoritasViewController.swift */; };
@@ -132,7 +131,6 @@
 		683C0A132719D1A1008FDFE1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		683C0A17271C7E12008FDFE1 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		68574129271618EC0094333C /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
-		687FA8A32722092B00855AD2 /* FavoritasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritasViewModel.swift; sourceTree = "<group>"; };
 		68B21F162723648600842EEC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		68D06D342720CB78003E9B82 /* FavoritasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritasViewController.swift; sourceTree = "<group>"; };
 		68D06D352720CB78003E9B82 /* FavoritasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritasViewController.xib; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 			children = (
 				68D06D342720CB78003E9B82 /* FavoritasViewController.swift */,
 				68D06D352720CB78003E9B82 /* FavoritasViewController.xib */,
-				687FA8A32722092B00855AD2 /* FavoritasViewModel.swift */,
 			);
 			path = PeliculasFavoritas;
 			sourceTree = "<group>";
@@ -532,7 +529,6 @@
 				680706AF27204FFD006BA471 /* TabBarViewController.swift in Sources */,
 				68D741FD2715EB5A003932F4 /* SceneDelegate.swift in Sources */,
 				68D742052715EB5A003932F4 /* AlkemyMoviesApp.xcdatamodeld in Sources */,
-				687FA8A42722092B00855AD2 /* FavoritasViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

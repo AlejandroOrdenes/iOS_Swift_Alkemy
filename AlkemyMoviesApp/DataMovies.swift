@@ -27,5 +27,5 @@ struct MoviesJson: Codable {
     let vote_average: Double
     let vote_count: Int
     
-    
+
 }
