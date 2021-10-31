@@ -66,7 +66,7 @@ extension InitialViewController: UITableViewDataSource, UITableViewDelegate {
         if let url = URL(string: "https://image.tmdb.org/t/p/w500\(movies.poster_path)") {
             customCell.imageIV.loadImageView(from: url)
         }
-        print(movies)
+//        print(movies)
         return cell
     }
     

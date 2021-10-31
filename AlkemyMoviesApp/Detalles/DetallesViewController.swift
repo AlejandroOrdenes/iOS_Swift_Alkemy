@@ -51,8 +51,8 @@ class DetallesViewController: UIViewController {
         
         let alert = UIAlertController(title: "Add to Favorites", message: "Movie Added", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        print("Se agrego")
+        self.present(alert, animated: true, completion: nil)
+//        print("Se agrego")
 
         
     }

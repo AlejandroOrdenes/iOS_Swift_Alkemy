@@ -19,7 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func enterButton(_ sender: Any) {
-        if let userEmail = emailUser.text, !userEmail.isEmpty {
+        if let userEmail = emailUser.text, !userEmail.isEmpty && userEmail.contains("@") {
             presentBarController()
         } else {
            presentNousernameAlert()
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     }
     private func presentNousernameAlert() {
-        let alert = UIAlertController(title: "Alerta", message: "Ingrese un nombre de Usuario!!!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Alert", message: "Enter a valid Email", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
