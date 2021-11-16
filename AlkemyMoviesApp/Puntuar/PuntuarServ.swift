@@ -8,15 +8,12 @@
 import Foundation
 import Alamofire
 
-func postRequest() {
-    let parameters: [String: Any] = [
-        "value" : 0
-       
-    ]
-    AF.request("http://myserver.com", method:.post, parameters: parameters,encoding: JSONEncoding.default) .responseJSON { (response) in
-        print(response)
-    }
-    
-}
+//func postRequest() {
+//    let parameters: [String: Any] = [
+//        "value" : 0
+//
+//    ]
+//
+//}
 
 

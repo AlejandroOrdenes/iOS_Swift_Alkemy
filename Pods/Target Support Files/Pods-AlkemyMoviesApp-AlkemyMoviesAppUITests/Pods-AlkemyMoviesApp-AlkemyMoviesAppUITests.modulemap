@@ -1,0 +1,6 @@
+framework module Pods_AlkemyMoviesApp_AlkemyMoviesAppUITests {
+  umbrella header "Pods-AlkemyMoviesApp-AlkemyMoviesAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
