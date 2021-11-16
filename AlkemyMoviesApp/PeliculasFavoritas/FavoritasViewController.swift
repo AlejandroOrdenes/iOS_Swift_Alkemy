@@ -8,9 +8,8 @@
 import UIKit
 
 class FavoritasViewController: UIViewController {
-    
+    let ext = UserDefaults()
     var favorites: MoviesJson!
-    var viewModel: InitialViewModel!
     var listFavoritas = [MoviesJson]()
 
     @IBOutlet weak var favoritasTableView: UITableView!
@@ -18,7 +17,7 @@ class FavoritasViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.viewModel = InitialViewModel(service: MoviesService())
+
         self.favoritasTableView.dataSource = self
         self.favoritasTableView.delegate = self
         self.favoritasTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellFavorites")
@@ -36,8 +35,12 @@ extension FavoritasViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = favoritasTableView.dequeueReusableCell(withIdentifier: "cellFavorites", for: indexPath)
-
+        
+        
         return cell
     }
     
+//    func getMovieIndexInitial(at index: Int) -> [MoviesJson] {
+//
+//    }
 }

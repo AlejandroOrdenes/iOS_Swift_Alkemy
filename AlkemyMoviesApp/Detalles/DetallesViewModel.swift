@@ -9,16 +9,32 @@ import UIKit
 
 
 class DetallesViewModel {
-    let moviesService: MoviesService
-    var movieDetallesModel = [MoviesJson]()
+    private var ratingService: RatingService
+    var token = [TokenJSON]()
     
 
-    init(service: MoviesService) {
-            self.moviesService = service
+    init(service: RatingService) {
+            self.ratingService = service
     }
     
     
+    func getTokenServ(completion: @escaping () -> Void) {
+        ratingService.getSessionJSON { token in
+            self.token = token
+            return completion()
+            
+        }
+    }
+    
+    func getIndex(index: Int) -> TokenJSON {
+        token[index]
+    }
 
+    func getIdSession() -> String{
+        return getIndex(index: token.count).guest_session_id
+
+    }
+    
 
     
 }

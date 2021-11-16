@@ -20,23 +20,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-Zw-Sym">
-                    <rect key="frame" x="50" y="370" width="81" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-Co-Kjx">
-                    <rect key="frame" x="50" y="399" width="315" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-Co-Kjx">
+                    <rect key="frame" x="47" y="399" width="320" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Dpo-UD-of9"/>
+                        <constraint firstAttribute="width" constant="320" id="Sf0-Lw-LhU"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-rp-cEa">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-rp-cEa">
                     <rect key="frame" x="105" y="641" width="205" height="51"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.59268721657503654" blue="0.15374796656689771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="oxV-m1-epV"/>
+                        <constraint firstAttribute="width" constant="205" id="tFn-Ql-TzR"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Enter">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,17 +44,44 @@
                         <action selector="enterButton:" destination="-1" eventType="touchUpInside" id="4vV-Hw-Kkc"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MoviesApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hd-Mc-EoR">
-                    <rect key="frame" x="20" y="142" width="374" height="138"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MoviesApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hd-Mc-EoR">
+                    <rect key="frame" x="20" y="128" width="374" height="138"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="374" id="CEE-tk-ifi"/>
+                        <constraint firstAttribute="height" constant="138" id="cdi-hX-7Ft"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-Zw-Sym">
+                    <rect key="frame" x="47" y="363" width="81" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="81" id="DtJ-vw-WM1"/>
+                        <constraint firstAttribute="height" constant="21" id="Qrd-lc-B1s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="labelColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1hd-Mc-EoR" secondAttribute="trailing" constant="20" id="8oA-9a-BN9"/>
+                <constraint firstItem="Iiy-Zw-Sym" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="9iC-hs-iJU"/>
+                <constraint firstItem="hX5-rp-cEa" firstAttribute="top" secondItem="9aZ-Co-Kjx" secondAttribute="bottom" constant="208" id="F1T-t1-7Fc"/>
+                <constraint firstItem="1hd-Mc-EoR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LqE-Td-y3Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Iiy-Zw-Sym" secondAttribute="trailing" constant="286" id="NGp-9S-j5i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hX5-rp-cEa" secondAttribute="trailing" constant="104" id="R3S-AG-dYX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9aZ-Co-Kjx" secondAttribute="trailing" constant="47" id="RZ1-Vh-Zse"/>
+                <constraint firstItem="9aZ-Co-Kjx" firstAttribute="top" secondItem="Iiy-Zw-Sym" secondAttribute="bottom" constant="15" id="SGt-2R-6zh"/>
+                <constraint firstItem="9aZ-Co-Kjx" firstAttribute="top" secondItem="1hd-Mc-EoR" secondAttribute="bottom" constant="133" id="TAZ-Fq-dlO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hX5-rp-cEa" secondAttribute="bottom" constant="170" id="bab-nX-CBy"/>
+                <constraint firstItem="hX5-rp-cEa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="105" id="hKU-H4-Ql9"/>
+                <constraint firstItem="9aZ-Co-Kjx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="rvj-NP-AiQ"/>
+            </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="84.375"/>
         </view>
     </objects>

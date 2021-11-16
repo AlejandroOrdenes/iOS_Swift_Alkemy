@@ -8,9 +8,10 @@
 import UIKit
 
 class DetallesViewController: UIViewController {
-    
     var movieDetails: MoviesJson!
-    var listMovies = [MoviesJson]()
+    var detallesView: DetallesViewModel!
+    var idMovies = [Int]()
+    
     
     @IBOutlet weak var imageMovie: UIImageView!
     @IBOutlet weak var titleMovie: UILabel!
@@ -24,6 +25,7 @@ class DetallesViewController: UIViewController {
     
     override func viewDidLoad() {
          super.viewDidLoad()
+        self.detallesView = DetallesViewModel(service: RatingService())
         
         let imageUrl = URL(string: "https://image.tmdb.org/t/p/w500" + movieDetails.backdrop_path)!
 
@@ -43,11 +45,36 @@ class DetallesViewController: UIViewController {
    
     
     @IBAction func voteButton(_ sender: Any) {
-
+        
+        
+        
+        detallesView.getTokenServ(){
+            print(self.detallesView.token)
+        }
+        
+//        let idSession = detallesView.getIdSession()
+        
+        
+        
     }
     
     @IBAction func addFavoritesButton(_ sender: Any) {
-
+//        if var list = UserDefaults.standard.array(forKey: "favMovie") == nil {
+//            
+//        }
+//        list?.append(movieDetails.id)
+//        UserDefaults.standard.set(idMovies, forKey: "favMovie")
+//        UserDefaults.standard.synchronize()
+        
+        
+        
+//        let ext = UserDefaults()
+//        favView.
+//        favView.listMovie.insert(movieDetails)
+//        print("LISTAAA",favView.listMovie)
+//        ext.setMoviesUserDefault(favView.listMovie, forKey: "favMovie")
+//        UserDefaults.standard.synchronize()
+        
         
         let alert = UIAlertController(title: "Add to Favorites", message: "Movie Added", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -56,9 +83,27 @@ class DetallesViewController: UIViewController {
 
         
     }
+    
+
+   
 
 }
 
+
+
+extension UserDefaults {
+    func getMovieUserDefault(forKey defaultName: String) -> Set<MoviesJson>? {
+        guard let data = data(forKey: defaultName) else { return nil }
+        do {
+            return try JSONDecoder().decode(Set<MoviesJson>.self, from: data)
+        } catch { print(error); return nil }
+    }
+
+    func setMoviesUserDefault(_ value: Set<MoviesJson>, forKey defaultName: String) {
+        let data = try? JSONEncoder().encode(value)
+        set(data, forKey: defaultName)
+    }
+}
        
     
 

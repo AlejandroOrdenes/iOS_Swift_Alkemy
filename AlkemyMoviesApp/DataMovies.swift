@@ -11,7 +11,7 @@ struct Movies: Codable {
     var results: [MoviesJson]
 }
 
-struct MoviesJson: Codable {
+struct MoviesJson: Codable, Hashable {
     let adult: Bool
     let backdrop_path: String
     let genre_ids: [Int]
